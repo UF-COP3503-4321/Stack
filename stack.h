@@ -15,7 +15,7 @@ public:
   bool isEmpty(); // Return true if the stack is empty
   // Constructor
   Stack() {
-    link = LinkedList();
+    list = LinkedList();
     topIndex = 0;
   }
 };

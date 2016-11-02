@@ -31,12 +31,12 @@ bool Stack::isEmpty() {
 void Stack::print() {
   // list.print();  Technically okay
   Stack printStack = Stack();
-  while (!this.isEmpty()) {
-    cout << this.top();
-    printStack.push(this.pop());
+  while (!isEmpty()) {
+    cout << top() << " ";
+    printStack.push(pop());
   }
   while (!printStack.isEmpty()) {
-    this.push(printStack.pop());
+    push(printStack.pop());
   }
-
+  cout << endl;
 }
